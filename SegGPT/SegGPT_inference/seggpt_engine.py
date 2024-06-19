@@ -99,8 +99,9 @@ def inference_image(model, device, img_path, img2_paths, tgt2_paths, out_path):
         size=[size[1], size[0]], 
         mode='nearest',
     ).permute(0, 2, 3, 1)[0].numpy()
-    output = Image.fromarray((input_image * (0.6 * output / 255 + 0.4)).astype(np.uint8))
-    output.save(out_path)
+    output_overlap = Image.fromarray((input_image * (0.6 * output / 255 + 0.4)).astype(np.uint8))
+    output_overlap.save(out_path)
+    return output
 
 
 def inference_video(model, device, vid_path, num_frames, img2_paths, tgt2_paths, out_path):
