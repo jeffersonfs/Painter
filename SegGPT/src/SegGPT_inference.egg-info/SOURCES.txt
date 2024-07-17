@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/SegGPT_inference/__init__.py
+src/SegGPT_inference/models_seggpt.py
+src/SegGPT_inference/seggpt_engine.py
+src/SegGPT_inference/seggpt_inference.py
+src/SegGPT_inference.egg-info/PKG-INFO
+src/SegGPT_inference.egg-info/SOURCES.txt
+src/SegGPT_inference.egg-info/dependency_links.txt
+src/SegGPT_inference.egg-info/top_level.txt
+src/SegGPT_inference/util/__init__.py
+src/SegGPT_inference/util/vitdet_utils.py
